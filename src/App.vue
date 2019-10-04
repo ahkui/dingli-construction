@@ -2,20 +2,19 @@
   <div id="app">
     <BannerCarousel />
     <Features />
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Footer from './components/Footer.vue';
 import Features from './components/Features.vue';
 import BannerCarousel from './components/BannerCarousel.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
+    Footer,
     Features,
     BannerCarousel,
   },

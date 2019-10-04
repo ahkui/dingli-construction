@@ -12,14 +12,14 @@
     <div class="bg-img feature">
       <div class="col w-50">
         <div class="bg-img feature-big" v-bind:style="`background-image:url('${image}')`">
-          <h1 class="title">未來的移動生活</h1>
+          <h1 class="title">未來的電動生活</h1>
           <div class="overlay">
             <div class="overlay-content">
               <div class="overlay-title">
-                <h2>未來的移動生活</h2>
+                <h2>未來的電動生活</h2>
               </div>
               <div class="overlay-infomation">
-                <p>未來的移動生活</p>
+                <p>未來的電動生活</p>
               </div>
               <div class="overlay-more">
                 <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
@@ -30,14 +30,14 @@
       </div>
       <div class="col w-25">
         <div class="bg-img feature-medium" v-bind:style="`background-image:url('${image}')`">
-          <h1 class="title">未來的移動生活</h1>
+          <h1 class="title">未來的電動生活</h1>
           <div class="overlay">
             <div class="overlay-content">
               <div class="overlay-title">
-                <h2>未來的移動生活</h2>
+                <h2>未來的電動生活</h2>
               </div>
               <div class="overlay-infomation">
-                <p>未來的移動生活</p>
+                <p>未來的電動生活</p>
               </div>
               <div class="overlay-more">
                 <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
@@ -46,14 +46,14 @@
           </div>
         </div>
         <div class="bg-img feature-small" v-bind:style="`background-image:url('${image}')`">
-          <h1 class="title">未來的移動生活</h1>
+          <h1 class="title">未來的電動生活</h1>
           <div class="overlay">
             <div class="overlay-content">
               <div class="overlay-title">
-                <h2>未來的移動生活</h2>
+                <h2>未來的電動生活</h2>
               </div>
               <div class="overlay-infomation">
-                <p>未來的移動生活</p>
+                <p>未來的電動生活</p>
               </div>
               <div class="overlay-more">
                 <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
@@ -64,14 +64,14 @@
       </div>
       <div class="col w-25">
         <div class="bg-img feature-small" v-bind:style="`background-image:url('${image}')`">
-          <h1 class="title">未來的移動生活</h1>
+          <h1 class="title">未來的電動生活</h1>
           <div class="overlay">
             <div class="overlay-content">
               <div class="overlay-title">
-                <h2>未來的移動生活</h2>
+                <h2>未來的電動生活</h2>
               </div>
               <div class="overlay-infomation">
-                <p>未來的移動生活</p>
+                <p>未來的電動生活</p>
               </div>
               <div class="overlay-more">
                 <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
@@ -80,14 +80,14 @@
           </div>
         </div>
         <div class="bg-img feature-medium" v-bind:style="`background-image:url('${image}')`">
-          <h1 class="title">未來的移動生活</h1>
+          <h1 class="title">未來的電動生活</h1>
           <div class="overlay">
             <div class="overlay-content">
               <div class="overlay-title">
-                <h2>未來的移動生活</h2>
+                <h2>未來的電動生活</h2>
               </div>
               <div class="overlay-infomation">
-                <p>未來的移動生活</p>
+                <p>未來的電動生活</p>
               </div>
               <div class="overlay-more">
                 <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
@@ -105,14 +105,14 @@
       </div>
       <div class="col w-33">
         <div class="bg-img feature-medium" v-bind:style="`background-image:url('${image}')`">
-          <h1 class="title">未來的移動生活</h1>
+          <h1 class="title">未來的電動生活</h1>
           <div class="overlay">
             <div class="overlay-content">
               <div class="overlay-title">
-                <h2>未來的移動生活</h2>
+                <h2>未來的電動生活</h2>
               </div>
               <div class="overlay-infomation">
-                <p>未來的移動生活</p>
+                <p>未來的電動生活</p>
               </div>
               <div class="overlay-more">
                 <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
@@ -121,14 +121,14 @@
           </div>
         </div>
         <div class="bg-img feature-small" v-bind:style="`background-image:url('${image}')`">
-          <h1 class="title">未來的移動生活</h1>
+          <h1 class="title">未來的電動生活</h1>
           <div class="overlay">
             <div class="overlay-content">
               <div class="overlay-title">
-                <h2>未來的移動生活</h2>
+                <h2>未來的電動生活</h2>
               </div>
               <div class="overlay-infomation">
-                <p>未來的移動生活</p>
+                <p>未來的電動生活</p>
               </div>
               <div class="overlay-more">
                 <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
@@ -149,26 +149,26 @@
 export default {
   data() {
     return {
-      image: 'https://picsum.photos/id/248/1920/1080',
+      image: 'https://picsum.photos/1920/1080',
       features: [
         {
-          title: '未來的移動生活',
+          title: '未來的電動生活',
           content: 'The Feture of Driving',
         },
         {
-          title: '未來的移動生活',
+          title: '未來的電動生活',
           content: 'The Feture of Driving',
         },
         {
-          title: '未來的移動生活',
+          title: '未來的電動生活',
           content: 'The Feture of Driving',
         },
         {
-          title: '未來的移動生活',
+          title: '未來的電動生活',
           content: 'The Feture of Driving',
         },
         {
-          title: '未來的移動生活',
+          title: '未來的電動生活',
           content: 'The Feture of Driving',
         },
       ],
@@ -232,8 +232,6 @@ $feature-content-spacing: 2rem;
     margin: #{$feature-block-spacing};
     width: calc(100% - #{$feature-block-spacing} - #{$feature-block-spacing});
     float: left;
-
-    background-color: blueviolet;
     position: relative;
 
     .overlay,
