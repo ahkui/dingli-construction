@@ -217,8 +217,8 @@ $feature-content-spacing: 2rem;
 
 .feature {
   display: flex;
-  padding: ($feature-block-spacing);
-  width: calc(100% - $feature-block-spacing);
+  padding: #{$feature-block-spacing};
+  width: calc(100% - #{$feature-block-spacing});
 
   .col {
     height: calc(
