@@ -16,31 +16,32 @@
 
 <script>
 // require styles
-import "swiper/dist/css/swiper.css";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import 'swiper/dist/css/swiper.css';
 
-import { swiper, swiperSlide } from "vue-awesome-swiper";
+import { swiper, swiperSlide } from 'vue-awesome-swiper';
 
 export default {
   components: {
     swiper,
-    swiperSlide
+    swiperSlide,
   },
   data() {
     return {
       images: [
-        "https://picsum.photos/id/498/1920/1080",
-        "https://picsum.photos/id/867/1920/1080",
-        "https://picsum.photos/id/485/1920/1080",
-        "https://picsum.photos/id/591/1920/1080",
-        "https://picsum.photos/id/826/1920/1080",
-        "https://picsum.photos/id/648/1920/1080",
-        "https://picsum.photos/id/783/1920/1080",
-        "https://picsum.photos/id/785/1920/1080",
-        "https://picsum.photos/id/485/1920/1080",
-        "https://picsum.photos/id/294/1920/1080"
+        'https://picsum.photos/id/498/1920/1080',
+        'https://picsum.photos/id/867/1920/1080',
+        'https://picsum.photos/id/485/1920/1080',
+        'https://picsum.photos/id/591/1920/1080',
+        'https://picsum.photos/id/826/1920/1080',
+        'https://picsum.photos/id/648/1920/1080',
+        'https://picsum.photos/id/783/1920/1080',
+        'https://picsum.photos/id/785/1920/1080',
+        'https://picsum.photos/id/485/1920/1080',
+        'https://picsum.photos/id/294/1920/1080',
       ],
       swiperOption: {
-        effect: "fade",
+        effect: 'fade',
         grabCursor: true,
         lazy: true,
         loop: true,
@@ -48,19 +49,19 @@ export default {
         centeredSlides: true,
         autoplay: {
           delay: 3000,
-          disableOnInteraction: false
+          disableOnInteraction: false,
         },
         pagination: {
-          el: ".swiper-pagination",
-          clickable: true
+          el: '.swiper-pagination',
+          clickable: true,
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        }
-      }
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      },
     };
-  }
+  },
 };
 </script>
 

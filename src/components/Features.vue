@@ -149,29 +149,29 @@
 export default {
   data() {
     return {
-      image: "https://picsum.photos/id/248/1920/1080",
+      image: 'https://picsum.photos/id/248/1920/1080',
       features: [
         {
-          title: "未來的移動生活",
-          content: "The Feture of Driving"
+          title: '未來的移動生活',
+          content: 'The Feture of Driving',
         },
         {
-          title: "未來的移動生活",
-          content: "The Feture of Driving"
+          title: '未來的移動生活',
+          content: 'The Feture of Driving',
         },
         {
-          title: "未來的移動生活",
-          content: "The Feture of Driving"
+          title: '未來的移動生活',
+          content: 'The Feture of Driving',
         },
         {
-          title: "未來的移動生活",
-          content: "The Feture of Driving"
+          title: '未來的移動生活',
+          content: 'The Feture of Driving',
         },
         {
-          title: "未來的移動生活",
-          content: "The Feture of Driving"
-        }
-      ]
+          title: '未來的移動生活',
+          content: 'The Feture of Driving',
+        },
+      ],
     };
   },
   methods: {
@@ -190,22 +190,22 @@ export default {
 
     showDynamicRuntimeModal() {
       this.$modal.show(
-        "fs",
+        'fs',
         {
-          text: "This text is passed as a property",
-          foo: "testing"
+          text: 'This text is passed as a property',
+          foo: 'testing',
         },
         {
-          height: "auto"
+          height: 'auto',
         },
         {
-          "before-close": event => {
-            console.log("this will be called before the modal closes");
-          }
-        }
+          'before-close': (event) => {
+            console.log('this will be called before the modal closes', event);
+          },
+        },
       );
-    }
-  }
+    },
+  },
 };
 </script>
 

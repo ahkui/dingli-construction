@@ -8,17 +8,17 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-import Features from "./components/Features.vue";
-import BannerCarousel from "./components/BannerCarousel.vue";
+import HelloWorld from './components/HelloWorld.vue';
+import Features from './components/Features.vue';
+import BannerCarousel from './components/BannerCarousel.vue';
 
 export default {
-  name: "app",
+  name: 'app',
   components: {
     HelloWorld,
     Features,
-    BannerCarousel
-  }
+    BannerCarousel,
+  },
 };
 </script>
 
