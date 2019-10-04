@@ -10,4 +10,5 @@ env | sort
 if [ -d "./dist" ]; then
     rm -r ./dist
 fi
+npm i
 npm run build
