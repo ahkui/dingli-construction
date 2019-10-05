@@ -1,9 +1,15 @@
 <template>
-  <div>
+  <div class="banner">
     <!-- swiper -->
     <swiper :options="swiperOption">
       <swiper-slide v-for="(image, index) in images" v-bind:key="image+'-'+index">
         <div v-bind:style="`background-image:url('${image}')`" class="img swiper-lazy"></div>
+        <div class="content">
+          <div class="title">
+            我是標題，請看我
+            <div class="sub-title">這是圖片的鏈接 {{image}}</div>
+          </div>
+        </div>
         <!-- <img data-src="{{image}}" class="swiper-lazy" /> -->
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
       </swiper-slide>
@@ -67,8 +73,24 @@ export default {
 
 
 <style lang="scss" scoped>
+$banner_aspect-radio: 45%;
+.banner {
+  position: relative;
+  padding-top: #{$banner_aspect-radio};
+  width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  .banner {
+    padding-top: calc(#{$banner_aspect-radio} * 2);
+  }
+}
 .swiper-container {
-  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  // height: calc(100vw * 0.85);
 }
 .swiper-pagination {
   bottom: 1rem;
@@ -77,6 +99,7 @@ export default {
   text-align: center;
   font-size: 18px;
   background: #444 !important;
+  position: relative;
   .img {
     height: 100%;
     width: 100%;
@@ -84,7 +107,53 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .content {
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    .title {
+      color: white;
+      font-weight: bold;
+      font-size: calc(100vw * 0.05);
+      position: relative;
+      top: 30%;
+
+      .sub-title {
+        font-size: calc(100vw * 0.025);
+        font-weight: normal;
+      }
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .img {
+      height: 50%;
+    }
+    .content {
+      background-color: black;
+      height: 50%;
+      position: relative;
+      .title {
+        color: white;
+        font-weight: bold;
+        font-size: calc(100vw * 0.08);
+        // font-size: 1.5rem;
+        position: relative;
+        top: 30%;
+
+        .sub-title {
+          display: none;
+        }
+      }
+    }
+  }
 }
+
 .swiper-button-next,
 .swiper-button-prev {
   opacity: 0.45;
@@ -92,6 +161,21 @@ export default {
   &:hover {
     opacity: 1;
     // background: #444 !important;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 25%;
+  }
+}
+</style>
+
+<style lang="scss">
+.swiper-pagination {
+  span {
+    background: lightgrey;
   }
 }
 </style>

@@ -9,129 +9,98 @@
     >
       <b>{{time}}</b>
     </modal>
-    <div class="bg-img feature">
-      <div class="col w-50">
-        <div class="bg-img feature-big" v-bind:style="`background-image:url('${image}')`">
-          <h1 class="title">未來的電動生活</h1>
-          <div class="overlay">
-            <div class="overlay-content">
-              <div class="overlay-title">
-                <h2>未來的電動生活</h2>
-              </div>
-              <div class="overlay-infomation">
-                <p>未來的電動生活</p>
-              </div>
-              <div class="overlay-more">
-                <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col w-25">
-        <div class="bg-img feature-medium" v-bind:style="`background-image:url('${image}')`">
-          <h1 class="title">未來的電動生活</h1>
-          <div class="overlay">
-            <div class="overlay-content">
-              <div class="overlay-title">
-                <h2>未來的電動生活</h2>
-              </div>
-              <div class="overlay-infomation">
-                <p>未來的電動生活</p>
-              </div>
-              <div class="overlay-more">
-                <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
+    <div class="bg-img feature-wrapper">
+      <div class="row">
+        <div class="column column-2">
+          <div class="bg-img feature" v-bind:style="`background-image:url('${image[0]}')`">
+            <h1 class="title">未來的電動生活</h1>
+            <div class="overlay">
+              <div class="overlay-content">
+                <div class="overlay-title">
+                  <h2>未來的電動生活</h2>
+                </div>
+                <div class="overlay-infomation">
+                  <p>未來的電動生活</p>
+                </div>
+                <div class="overlay-more">
+                  <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="bg-img feature-small" v-bind:style="`background-image:url('${image}')`">
-          <h1 class="title">未來的電動生活</h1>
-          <div class="overlay">
-            <div class="overlay-content">
-              <div class="overlay-title">
-                <h2>未來的電動生活</h2>
+        <div class="column">
+          <div class="row row-2">
+            <div class="bg-img feature" v-bind:style="`background-image:url('${image[1]}')`">
+              <h1 class="title">未來的電動生活</h1>
+              <div class="overlay">
+                <div class="overlay-content">
+                  <div class="overlay-title">
+                    <h2>未來的電動生活</h2>
+                  </div>
+                  <div class="overlay-infomation">
+                    <p>未來的電動生活</p>
+                  </div>
+                  <div class="overlay-more">
+                    <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
+                  </div>
+                </div>
               </div>
-              <div class="overlay-infomation">
-                <p>未來的電動生活</p>
-              </div>
-              <div class="overlay-more">
-                <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
+            </div>
+          </div>
+          <div class="row row-3">
+            <div class="bg-img feature" v-bind:style="`background-image:url('${image[2]}')`">
+              <h1 class="title">未來的電動生活</h1>
+              <div class="overlay">
+                <div class="overlay-content">
+                  <div class="overlay-title">
+                    <h2>未來的電動生活</h2>
+                  </div>
+                  <div class="overlay-infomation">
+                    <p>未來的電動生活</p>
+                  </div>
+                  <div class="overlay-more">
+                    <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col w-25">
-        <div class="bg-img feature-small" v-bind:style="`background-image:url('${image}')`">
-          <h1 class="title">未來的電動生活</h1>
-          <div class="overlay">
-            <div class="overlay-content">
-              <div class="overlay-title">
-                <h2>未來的電動生活</h2>
-              </div>
-              <div class="overlay-infomation">
-                <p>未來的電動生活</p>
-              </div>
-              <div class="overlay-more">
-                <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bg-img feature-medium" v-bind:style="`background-image:url('${image}')`">
-          <h1 class="title">未來的電動生活</h1>
-          <div class="overlay">
-            <div class="overlay-content">
-              <div class="overlay-title">
-                <h2>未來的電動生活</h2>
-              </div>
-              <div class="overlay-infomation">
-                <p>未來的電動生活</p>
-              </div>
-              <div class="overlay-more">
-                <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
+        <div class="column">
+          <div class="row row-3">
+            <div class="bg-img feature" v-bind:style="`background-image:url('${image[3]}')`">
+              <h1 class="title">未來的電動生活</h1>
+              <div class="overlay">
+                <div class="overlay-content">
+                  <div class="overlay-title">
+                    <h2>未來的電動生活</h2>
+                  </div>
+                  <div class="overlay-infomation">
+                    <p>未來的電動生活</p>
+                  </div>
+                  <div class="overlay-more">
+                    <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="bg-img feature">
-      <div class="col w-66">
-        <div class="bg-img feature-big" v-bind:style="`background-image:url('${image}')`">
-          <div>big</div>
-        </div>
-      </div>
-      <div class="col w-33">
-        <div class="bg-img feature-medium" v-bind:style="`background-image:url('${image}')`">
-          <h1 class="title">未來的電動生活</h1>
-          <div class="overlay">
-            <div class="overlay-content">
-              <div class="overlay-title">
-                <h2>未來的電動生活</h2>
-              </div>
-              <div class="overlay-infomation">
-                <p>未來的電動生活</p>
-              </div>
-              <div class="overlay-more">
-                <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bg-img feature-small" v-bind:style="`background-image:url('${image}')`">
-          <h1 class="title">未來的電動生活</h1>
-          <div class="overlay">
-            <div class="overlay-content">
-              <div class="overlay-title">
-                <h2>未來的電動生活</h2>
-              </div>
-              <div class="overlay-infomation">
-                <p>未來的電動生活</p>
-              </div>
-              <div class="overlay-more">
-                <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
+          <div class="row row-2">
+            <div class="bg-img feature" v-bind:style="`background-image:url('${image[4]}')`">
+              <h1 class="title">未來的電動生活</h1>
+              <div class="overlay">
+                <div class="overlay-content">
+                  <div class="overlay-title">
+                    <h2>未來的電動生活</h2>
+                  </div>
+                  <div class="overlay-infomation">
+                    <p>未來的電動生活</p>
+                  </div>
+                  <div class="overlay-more">
+                    <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -149,7 +118,13 @@
 export default {
   data() {
     return {
-      image: 'https://picsum.photos/1920/1080',
+      image: [
+        'http://assets.volvocars.com/tw/~/media/taiwan/images/wuntw/homepage_201904/02_linkinggrid/01_1343x1080.jpg',
+        'http://assets.volvocars.com/tw/~/media/taiwan/images/wuntw/homepage_201904/02_linkinggrid/02_4096x2304.jpg',
+        'http://assets.volvocars.com/tw/~/media/taiwan/images/wuntw/homepage_201904/02_linkinggrid/03_4096x2304.jpg',
+        'http://assets.volvocars.com/tw/~/media/taiwan/images/wuntw/homepage_201904/02_linkinggrid/04_2420x2304.jpg',
+        'http://assets.volvocars.com/tw/~/media/taiwan/images/wuntw/homepage_201904/02_linkinggrid/05_4096x2304.jpg',
+      ],
       features: [
         {
           title: '未來的電動生活',
@@ -211,28 +186,59 @@ export default {
 
 
 <style lang="scss" scoped>
-$feature-block-spacing: 4px;
+$feature-block-spacing: 8px;
 $feature-height: 720px;
 $feature-content-spacing: 2rem;
 
-.feature {
+.feature-wrapper {
   display: flex;
-  padding: #{$feature-block-spacing};
-  width: calc(100% - #{$feature-block-spacing} - #{$feature-block-spacing});
+  margin: calc(#{$feature-block-spacing} / 2);
+  width: calc(100% - #{$feature-block-spacing});
 
-  .col {
-    height: calc(
-      #{$feature-height} - #{$feature-block-spacing} - #{$feature-block-spacing}
-    );
+  &:before {
+    padding-top: 40%;
+    content: "";
   }
 
-  .feature-big,
-  .feature-medium,
-  .feature-small {
-    margin: #{$feature-block-spacing};
-    width: calc(100% - #{$feature-block-spacing} - #{$feature-block-spacing});
-    float: left;
+  @media screen and (max-width: 720px) {
+    &:before {
+      padding-top: calc(35% * 5);
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    // height: 100%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  .column,
+  .row {
+    &-2 {
+      flex: 2;
+    }
+    &-3 {
+      flex: 3;
+    }
+    &-4 {
+      flex: 4;
+    }
+  }
+
+  .feature {
     position: relative;
+    margin: calc(#{$feature-block-spacing} / 2);
+    width: calc(100% - #{$feature-block-spacing});
+    height: calc(100% - #{$feature-block-spacing});
 
     .overlay,
     .title {
@@ -297,20 +303,40 @@ $feature-content-spacing: 2rem;
     }
   }
 
-  .feature-big {
-    height: calc(#{$feature-height} - (#{$feature-block-spacing} * 4));
-  }
+  @media screen and (max-width: 720px) {
+    & {
+      margin: calc(#{$feature-block-spacing} / 2) 0;
+      width: 100%;
+      .feature {
+        margin: calc(#{$feature-block-spacing} / 2) 0;
+        width: 100%;
+      }
+    }
+    .column {
+      flex: unset;
+      width: inherit;
+      &-2,
+      &-3,
+      &-4 {
+        flex: unset;
+      }
+    }
 
-  .feature-medium {
-    height: calc(
-      (#{$feature-height} - (#{$feature-block-spacing} * 6)) / 5 * 3
-    );
-  }
+    .row {
+      &-2,
+      &-3,
+      &-4 {
+        flex: 1;
+      }
+    }
 
-  .feature-small {
-    height: calc(
-      (#{$feature-height} - (#{$feature-block-spacing} * 6)) / 5 * 2
-    );
+    .feature {
+      height: 160px;
+    }
+    // .feature:before {
+    //   padding-top: 40%;
+    //   content: "";
+    // }
   }
 }
 </style>

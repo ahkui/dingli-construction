@@ -40,8 +40,9 @@ export default {};
 
   .footer-navigation {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     align-items: center;
+    justify-content: center;
 
     b {
       margin: 1rem;

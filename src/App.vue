@@ -2,6 +2,7 @@
   <div id="app">
     <BannerCarousel />
     <Features />
+    <EventCarousel />
     <Footer />
   </div>
 </template>
@@ -10,6 +11,7 @@
 import Footer from './components/Footer.vue';
 import Features from './components/Features.vue';
 import BannerCarousel from './components/BannerCarousel.vue';
+import EventCarousel from './components/EventCarousel.vue';
 
 export default {
   name: 'app',
@@ -17,6 +19,7 @@ export default {
     Footer,
     Features,
     BannerCarousel,
+    EventCarousel,
   },
 };
 </script>
