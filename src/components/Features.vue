@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <modal
       name="example"
       :width="300"
@@ -111,7 +111,7 @@
       <p>{{ text }}</p>
       <p>Default Property: {{ foo }} - value is "foo"</p>
     </modal>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -189,7 +189,9 @@ export default {
 $feature-block-spacing: 8px;
 $feature-height: 720px;
 $feature-content-spacing: 2rem;
-
+section{
+  margin-top:3rem;
+}
 .feature-wrapper {
   display: flex;
   margin: calc(#{$feature-block-spacing} / 2);

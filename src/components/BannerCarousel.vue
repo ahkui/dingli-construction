@@ -1,5 +1,5 @@
 <template>
-  <div class="banner">
+  <section class="banner">
     <!-- swiper -->
     <swiper :options="swiperOption">
       <swiper-slide v-for="(image, index) in images" v-bind:key="image+'-'+index">
@@ -17,7 +17,7 @@
       <div class="swiper-button-prev" slot="button-prev"></div>
       <div class="swiper-button-next" slot="button-next"></div>
     </swiper>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -73,7 +73,7 @@ export default {
 
 
 <style lang="scss" scoped>
-$banner_aspect-radio: 45%;
+$banner_aspect-radio: 35%;
 .banner {
   position: relative;
   padding-top: #{$banner_aspect-radio};

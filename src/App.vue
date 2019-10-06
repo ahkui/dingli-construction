@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- <StickyNavBar /> -->
     <BannerCarousel />
     <Features />
     <EventCarousel />
@@ -12,6 +13,7 @@ import Footer from './components/Footer.vue';
 import Features from './components/Features.vue';
 import BannerCarousel from './components/BannerCarousel.vue';
 import EventCarousel from './components/EventCarousel.vue';
+// import StickyNavBar from './components/StickyNavBar.vue';
 
 export default {
   name: 'app',
@@ -20,6 +22,7 @@ export default {
     Features,
     BannerCarousel,
     EventCarousel,
+    // StickyNavBar,
   },
 };
 </script>
