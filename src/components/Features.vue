@@ -13,17 +13,17 @@
       <div class="row">
         <div class="column column-2">
           <div class="bg-img feature" v-bind:style="`background-image:url('${image[0]}')`">
-            <h1 class="title">未來的電動生活</h1>
+            <h1 class="title">新建案資訊</h1>
             <div class="overlay">
               <div class="overlay-content">
                 <div class="overlay-title">
-                  <h2>未來的電動生活</h2>
+                  <h2>新建案資訊</h2>
                 </div>
                 <div class="overlay-infomation">
-                  <p>未來的電動生活</p>
+                  <p>- 新建案資訊 -</p>
                 </div>
                 <div class="overlay-more">
-                  <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
+                  <a class="overlay-more" @click="showDynamicRuntimeModal()">了解更多</a>
                 </div>
               </div>
             </div>
@@ -32,17 +32,17 @@
         <div class="column">
           <div class="row row-2">
             <div class="bg-img feature" v-bind:style="`background-image:url('${image[1]}')`">
-              <h1 class="title">未來的電動生活</h1>
+              <h1 class="title">結構</h1>
               <div class="overlay">
                 <div class="overlay-content">
                   <div class="overlay-title">
-                    <h2>未來的電動生活</h2>
+                    <h2>結構</h2>
                   </div>
                   <div class="overlay-infomation">
-                    <p>未來的電動生活</p>
+                    <p>- 結構 -</p>
                   </div>
                   <div class="overlay-more">
-                    <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
+                    <a class="overlay-more" @click="showDynamicRuntimeModal()">了解更多</a>
                   </div>
                 </div>
               </div>
@@ -50,17 +50,17 @@
           </div>
           <div class="row row-3">
             <div class="bg-img feature" v-bind:style="`background-image:url('${image[2]}')`">
-              <h1 class="title">未來的電動生活</h1>
+              <h1 class="title">陶瓷工藝</h1>
               <div class="overlay">
                 <div class="overlay-content">
                   <div class="overlay-title">
-                    <h2>未來的電動生活</h2>
+                    <h2>陶瓷工藝</h2>
                   </div>
                   <div class="overlay-infomation">
-                    <p>未來的電動生活</p>
+                    <p>- 陶瓷工藝 -</p>
                   </div>
                   <div class="overlay-more">
-                    <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
+                    <a class="overlay-more" @click="showDynamicRuntimeModal()">了解更多</a>
                   </div>
                 </div>
               </div>
@@ -70,17 +70,17 @@
         <div class="column">
           <div class="row row-3">
             <div class="bg-img feature" v-bind:style="`background-image:url('${image[3]}')`">
-              <h1 class="title">未來的電動生活</h1>
+              <h1 class="title">廚衛工藝</h1>
               <div class="overlay">
                 <div class="overlay-content">
                   <div class="overlay-title">
-                    <h2>未來的電動生活</h2>
+                    <h2>廚衛工藝</h2>
                   </div>
                   <div class="overlay-infomation">
-                    <p>未來的電動生活</p>
+                    <p>- 廚衛工藝 -</p>
                   </div>
                   <div class="overlay-more">
-                    <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
+                    <a class="overlay-more" @click="showDynamicRuntimeModal()">了解更多</a>
                   </div>
                 </div>
               </div>
@@ -88,17 +88,17 @@
           </div>
           <div class="row row-2">
             <div class="bg-img feature" v-bind:style="`background-image:url('${image[4]}')`">
-              <h1 class="title">未來的電動生活</h1>
+              <h1 class="title">防水</h1>
               <div class="overlay">
                 <div class="overlay-content">
                   <div class="overlay-title">
-                    <h2>未來的電動生活</h2>
+                    <h2>防水</h2>
                   </div>
                   <div class="overlay-infomation">
-                    <p>未來的電動生活</p>
+                    <p>- 防水 -</p>
                   </div>
                   <div class="overlay-more">
-                    <a class="overlay-more" @click="showDynamicRuntimeModal()">快點我</a>
+                    <a class="overlay-more" @click="showDynamicRuntimeModal()">了解更多</a>
                   </div>
                 </div>
               </div>

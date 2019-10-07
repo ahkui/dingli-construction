@@ -2,12 +2,12 @@
   <section class="banner">
     <!-- swiper -->
     <swiper :options="swiperOption">
-      <swiper-slide v-for="(image, index) in images" v-bind:key="image+'-'+index">
-        <div v-bind:style="`background-image:url('${image}')`" class="img swiper-lazy"></div>
+      <swiper-slide v-for="(data, index) in datas" v-bind:key="'banner-'+index">
+        <div v-bind:style="`background-image:url('${data.image}')`" class="img swiper-lazy"></div>
         <div class="content">
           <div class="title">
-            我是標題，請看我
-            <div class="sub-title">這是圖片的鏈接 {{image}}</div>
+            {{data.title}}
+            <!-- <div class="sub-title">這是圖片的鏈接 {{image}}</div> -->
           </div>
         </div>
         <!-- <img data-src="{{image}}" class="swiper-lazy" /> -->
@@ -34,17 +34,43 @@ export default {
   },
   data() {
     return {
-      images: [
-        'https://picsum.photos/id/498/1920/1080',
-        'https://picsum.photos/id/867/1920/1080',
-        'https://picsum.photos/id/485/1920/1080',
-        'https://picsum.photos/id/591/1920/1080',
-        'https://picsum.photos/id/826/1920/1080',
-        'https://picsum.photos/id/648/1920/1080',
-        'https://picsum.photos/id/783/1920/1080',
-        'https://picsum.photos/id/785/1920/1080',
-        'https://picsum.photos/id/485/1920/1080',
-        'https://picsum.photos/id/294/1920/1080',
+      datas: [{
+        image: 'https://picsum.photos/id/498/1920/1080',
+        title: '鼎秝建設',
+      },
+      {
+        image: 'https://picsum.photos/id/867/1920/1080',
+        title: '清水模',
+      },
+      {
+        image: 'https://picsum.photos/id/485/1920/1080',
+        title: '石材',
+      },
+      {
+        image: 'https://picsum.photos/id/591/1920/1080',
+        title: '木地板',
+      },
+      {
+        image: 'https://picsum.photos/id/826/1920/1080',
+        title: '不鏽鋼龍頭',
+      },
+      {
+        image: 'https://picsum.photos/id/648/1920/1080',
+        title: '鋼筋',
+      },
+      {
+        image: 'https://picsum.photos/id/783/1920/1080',
+        title: '.',
+      },
+      {
+        image: 'https://picsum.photos/id/785/1920/1080',
+        title: '.',
+      },
+      {
+        image: 'https://picsum.photos/id/485/1920/1080',
+        title: '科技(電動車)',
+
+      },
       ],
       swiperOption: {
         effect: 'fade',

@@ -10,17 +10,17 @@
         >
           <img src />
         </div>
-        <div class="title">The E.V.A Initiative</div>
-        <div class="sub-title">分享 VOLVO 的研究成果，完備每個人的行車安全。</div>
-        <div class="more">了解更多 ></div>
+        <div class="title">裝修部</div>
+        <!-- <div class="sub-title">-</div> -->
+        <!-- <div class="more">了解更多 ></div> -->
       </div>
       <div class="content">
         <div
           class="image"
           v-bind:style="`background-image:url('http://assets.volvocars.com/tw/~/media/taiwan/images/wuntw/homepage_201904/02_linkinggrid/02_4096x2304.jpg')`"
         ></div>
-        <div class="title">Vision 2020</div>
-        <div class="sub-title">在 2020 年之前，達到沒有人員因為乘坐 VOLVO 汽車而喪生或嚴重受傷。</div>
+        <div class="title">社會責任與服務</div>
+        <!-- <div class="sub-title">在 2020 年之前，達到沒有人員因為乘坐 VOLVO 汽車而喪生或嚴重受傷。</div> -->
       </div>
     </carousel>
   </section>
