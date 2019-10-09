@@ -259,6 +259,12 @@ section{
       color: white;
     }
 
+    @media screen and (min-width: 1600px) {
+      .title {
+         font-size: calc(100vw * 0.02);
+      }
+    }
+
     .overlay {
       opacity: 0;
       position: absolute;

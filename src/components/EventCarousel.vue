@@ -4,11 +4,7 @@
     <div class="title">永不停止，思索 Volvo Cars 的下一步</div>
     <carousel :responsive="responsive">
       <div class="content">
-        <div
-          class="image bg-img"
-          v-bind:style="`background-image:url('${DecorationImage}')`"
-        >
-        </div>
+        <div class="image bg-img" v-bind:style="`background-image:url('${DecorationImage}')`"></div>
         <div class="title">裝修部</div>
         <!-- <div class="sub-title">-</div> -->
         <!-- <div class="more">了解更多 ></div> -->
@@ -78,6 +74,16 @@ export default {
     font-size: 90%;
   }
 
+  @media screen and (min-width: 1600px) {
+    > .title {
+      font-size: calc(100vw * 0.013);
+    }
+
+    > .poster {
+      font-size: calc(100vw * 0.01);
+    }
+  }
+
   // &:before{
   //   padding-top:35%;
   //   content:"";
@@ -101,6 +107,12 @@ export default {
       font-size: 1.4rem;
     }
 
+    @media screen and (min-width: 1600px) {
+      .title {
+        font-size: calc(100vw * 0.012);
+      }
+    }
+
     .sub-title {
       margin-top: 1rem;
       font-size: 1rem;
@@ -117,6 +129,12 @@ export default {
 @media screen and (max-width: 720px) {
   .event-section {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .event-section {
+    max-width: calc(100vw * 0.7);
   }
 }
 </style>
