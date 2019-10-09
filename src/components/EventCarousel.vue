@@ -6,9 +6,8 @@
       <div class="content">
         <div
           class="image bg-img"
-          v-bind:style="`background-image:url('http://assets.volvocars.com/tw/~/media/taiwan/images/wuntw/homepage_201904/02_linkinggrid/01_1343x1080.jpg')`"
+          v-bind:style="`background-image:url('${DecorationImage}')`"
         >
-          <img src />
         </div>
         <div class="title">裝修部</div>
         <!-- <div class="sub-title">-</div> -->
@@ -30,12 +29,15 @@
 // require styles
 import carousel from 'vue-owl-carousel';
 
+import DecorationImage from '../assets/裝修部.jpg';
+
 export default {
   components: {
     carousel,
   },
   data() {
     return {
+      DecorationImage,
       responsive: {
         0: { items: 1, nav: false },
         720: {

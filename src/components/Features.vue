@@ -12,7 +12,7 @@
     <div class="bg-img feature-wrapper">
       <div class="row">
         <div class="column column-2">
-          <div class="bg-img feature" v-bind:style="`background-image:url('${image[0]}')`">
+          <div class="bg-img feature" v-bind:style="`background-image:url('${NewCaseImage}')`">
             <h1 class="title">新建案資訊</h1>
             <div class="overlay">
               <div class="overlay-content">
@@ -31,7 +31,7 @@
         </div>
         <div class="column">
           <div class="row row-2">
-            <div class="bg-img feature" v-bind:style="`background-image:url('${image[1]}')`">
+            <div class="bg-img feature" v-bind:style="`background-image:url('${StructureImage}')`">
               <h1 class="title">結構</h1>
               <div class="overlay">
                 <div class="overlay-content">
@@ -49,7 +49,10 @@
             </div>
           </div>
           <div class="row row-3">
-            <div class="bg-img feature" v-bind:style="`background-image:url('${image[2]}')`">
+            <div
+              class="bg-img feature"
+              v-bind:style="`background-image:url('${CeramicTechImage}')`"
+            >
               <h1 class="title">陶瓷工藝</h1>
               <div class="overlay">
                 <div class="overlay-content">
@@ -69,7 +72,7 @@
         </div>
         <div class="column">
           <div class="row row-3">
-            <div class="bg-img feature" v-bind:style="`background-image:url('${image[3]}')`">
+            <div class="bg-img feature" v-bind:style="`background-image:url('https://wowlavie-aws.hmgcdn.com/file/article_all/A1461829480.jpg')`">
               <h1 class="title">廚衛工藝</h1>
               <div class="overlay">
                 <div class="overlay-content">
@@ -115,9 +118,16 @@
 </template>
 
 <script>
+import NewCaseImage from '../assets/新建案資訊.jpg';
+import StructureImage from '../assets/結構.jpg';
+import CeramicTechImage from '../assets/陶瓷工藝.jpg';
+
 export default {
   data() {
     return {
+      NewCaseImage,
+      StructureImage,
+      CeramicTechImage,
       image: [
         'http://assets.volvocars.com/tw/~/media/taiwan/images/wuntw/homepage_201904/02_linkinggrid/01_1343x1080.jpg',
         'http://assets.volvocars.com/tw/~/media/taiwan/images/wuntw/homepage_201904/02_linkinggrid/02_4096x2304.jpg',

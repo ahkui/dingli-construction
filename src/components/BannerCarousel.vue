@@ -27,6 +27,8 @@ import 'swiper/dist/css/swiper.css';
 
 import { swiper, swiperSlide } from 'vue-awesome-swiper';
 
+import ReinforcingSteelImage from '../assets/鋼筋.jpg';
+
 export default {
   components: {
     swiper,
@@ -47,15 +49,15 @@ export default {
         title: '石材',
       },
       {
-        image: 'https://picsum.photos/id/591/1920/1080',
+        image: 'http://www.semiflor.com.tw/upload/brand/03_德國強化木地板/KR_09.jpg',
         title: '木地板',
       },
       {
-        image: 'https://picsum.photos/id/826/1920/1080',
+        image: 'https://cdn.ready-market.com/106/3a861c74//Templates/pic/Strongco-faq-12.jpg?v=83d77b3c',
         title: '不鏽鋼龍頭',
       },
       {
-        image: 'https://picsum.photos/id/648/1920/1080',
+        image: ReinforcingSteelImage,
         title: '鋼筋',
       },
       {
@@ -67,7 +69,7 @@ export default {
         title: '.',
       },
       {
-        image: 'https://picsum.photos/id/485/1920/1080',
+        image: 'https://www.tesla.com/tesla_theme/assets/img/savings-calculator/modelx_white_wall_2x.jpg',
         title: '科技(電動車)',
 
       },
