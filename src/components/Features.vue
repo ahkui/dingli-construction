@@ -11,7 +11,7 @@
     </modal>
     <div class="bg-img feature-wrapper">
       <div class="row">
-        <div class="column column-2">
+        <div class="col col-2">
           <div class="bg-img feature" v-bind:style="`background-image:url('${NewCaseImage}')`">
             <h1 class="title">新建案資訊</h1>
             <div class="overlay">
@@ -29,7 +29,7 @@
             </div>
           </div>
         </div>
-        <div class="column">
+        <div class="col">
           <div class="row row-2">
             <div class="bg-img feature" v-bind:style="`background-image:url('${StructureImage}')`">
               <h1 class="title">結構</h1>
@@ -70,7 +70,7 @@
             </div>
           </div>
         </div>
-        <div class="column">
+        <div class="col">
           <div class="row row-3">
             <div class="bg-img feature" v-bind:style="`background-image:url('https://wowlavie-aws.hmgcdn.com/file/article_all/A1461829480.jpg')`">
               <h1 class="title">廚衛工藝</h1>
@@ -218,34 +218,6 @@ section{
     }
   }
 
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    // height: 100%;
-  }
-
-  .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-  }
-
-  .column,
-  .row {
-    &-2 {
-      flex: 2;
-    }
-    &-3 {
-      flex: 3;
-    }
-    &-4 {
-      flex: 4;
-    }
-  }
-
   .feature {
     position: relative;
     margin: calc(#{$feature-block-spacing} / 2);
@@ -330,7 +302,7 @@ section{
         width: 100%;
       }
     }
-    .column {
+    .col {
       flex: unset;
       width: inherit;
       &-2,

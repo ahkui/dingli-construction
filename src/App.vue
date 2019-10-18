@@ -78,5 +78,32 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  .col,
+  .row {
+    &-2 {
+      flex: 2;
+    }
+    &-3 {
+      flex: 3;
+    }
+    &-4 {
+      flex: 4;
+    }
+  }
 }
 </style>

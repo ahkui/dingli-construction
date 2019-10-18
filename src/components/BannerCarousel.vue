@@ -28,6 +28,7 @@ import 'swiper/dist/css/swiper.css';
 import { swiper, swiperSlide } from 'vue-awesome-swiper';
 
 import ReinforcingSteelImage from '../assets/鋼筋.jpg';
+import StoneImage from '../assets/石材.jpg';
 
 export default {
   components: {
@@ -45,7 +46,7 @@ export default {
         title: '清水模',
       },
       {
-        image: 'https://picsum.photos/id/485/1920/1080',
+        image: StoneImage,
         title: '石材',
       },
       {
