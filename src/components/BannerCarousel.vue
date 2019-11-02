@@ -28,7 +28,9 @@ import 'swiper/dist/css/swiper.css';
 import { swiper, swiperSlide } from 'vue-awesome-swiper';
 
 import ReinforcingSteelImage from '../assets/鋼筋.jpg';
-import StoneImage from '../assets/石材.jpg';
+import StoneImage from '../assets/大理石.jpg';
+import WoodImage from '../assets/木頭.jpg';
+import ArchitecturalConcreteImage from '../assets/清水模.jpg';
 
 export default {
   components: {
@@ -42,7 +44,7 @@ export default {
         title: '鼎秝建設',
       },
       {
-        image: 'https://picsum.photos/id/867/1920/1080',
+        image: ArchitecturalConcreteImage,
         title: '清水模',
       },
       {
@@ -50,7 +52,7 @@ export default {
         title: '石材',
       },
       {
-        image: 'http://www.semiflor.com.tw/upload/brand/03_德國強化木地板/KR_09.jpg',
+        image: WoodImage,
         title: '木地板',
       },
       {

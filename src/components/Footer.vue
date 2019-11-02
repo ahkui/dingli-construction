@@ -11,12 +11,18 @@
       <table>
         <tr>
           <td>聯絡地址：</td>
-          <td>台中市西區五權路2-106號14樓A</td>
+          <td>台中市五權路2-106號14樓A</td>
+        </tr>
+        <tr>
+          <td>聯絡電話：</td>
+          <td>
+            <a href="tel:+886423763123">04-23763123</a>
+          </td>
         </tr>
         <tr>
           <td>聯絡信箱：</td>
           <td>
-            <a href="mailto:nameho99@gmail.com">nameho99@gmail.com</a>
+            <a>N/A</a>
           </td>
         </tr>
       </table>

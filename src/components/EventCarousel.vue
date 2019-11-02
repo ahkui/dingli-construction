@@ -4,7 +4,7 @@
     <div class="title">永不停止，思索 Volvo Cars 的下一步</div>
     <carousel :responsive="responsive">
       <div class="content">
-        <div class="image bg-img" v-bind:style="`background-image:url('${DecorationImage}')`"></div>
+        <div class="image bg-img" v-bind:style="`background-image:url('${NewParkImage}')`"></div>
         <div class="title">裝修部</div>
         <!-- <div class="sub-title">-</div> -->
         <!-- <div class="more">了解更多 ></div> -->
@@ -25,7 +25,9 @@
 // require styles
 import carousel from 'vue-owl-carousel';
 
-import DecorationImage from '../assets/裝修部.jpg';
+// import DecorationImage from '../assets/裝修部.jpg';
+import NewParkImage from '../assets/6x3m_帆布.jpg';
+
 
 export default {
   components: {
@@ -33,7 +35,8 @@ export default {
   },
   data() {
     return {
-      DecorationImage,
+      // DecorationImage,
+      NewParkImage,
       responsive: {
         0: { items: 1, nav: false },
         720: {
