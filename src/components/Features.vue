@@ -72,7 +72,8 @@
         </div>
         <div class="col">
           <div class="row row-3">
-            <div class="bg-img feature" v-bind:style="`background-image:url('https://wowlavie-aws.hmgcdn.com/file/article_all/A1461829480.jpg')`">
+            <div class="bg-img feature"
+            v-bind:style="`background-image:url('${KitchenBathroomTechImage}')`">
               <h1 class="title">廚衛工藝</h1>
               <div class="overlay">
                 <div class="overlay-content">
@@ -118,9 +119,11 @@
 </template>
 
 <script>
-import NewCaseImage from '../assets/新建案資訊.jpg';
+import NewCaseImage from '../assets/6x3m_帆布.jpg';
 import StructureImage from '../assets/結構.jpg';
 import CeramicTechImage from '../assets/陶瓷工藝.jpg';
+import KitchenBathroomTechImage from '../assets/廚衛工藝.jpg';
+
 
 export default {
   data() {
@@ -128,6 +131,7 @@ export default {
       NewCaseImage,
       StructureImage,
       CeramicTechImage,
+      KitchenBathroomTechImage,
       image: [
         'http://assets.volvocars.com/tw/~/media/taiwan/images/wuntw/homepage_201904/02_linkinggrid/01_1343x1080.jpg',
         'http://assets.volvocars.com/tw/~/media/taiwan/images/wuntw/homepage_201904/02_linkinggrid/02_4096x2304.jpg',
