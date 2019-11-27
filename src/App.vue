@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- <StickyNavBar /> -->
+    <StickyNavBar />
     <BannerCarousel />
     <Features />
     <EventCarousel />
@@ -13,7 +13,7 @@ import Footer from './components/Footer.vue';
 import Features from './components/Features.vue';
 import BannerCarousel from './components/BannerCarousel.vue';
 import EventCarousel from './components/EventCarousel.vue';
-// import StickyNavBar from './components/StickyNavBar.vue';
+import StickyNavBar from './components/StickyNavBar.vue';
 
 export default {
   name: 'app',
@@ -22,7 +22,7 @@ export default {
     Features,
     BannerCarousel,
     EventCarousel,
-    // StickyNavBar,
+    StickyNavBar,
   },
 };
 </script>
@@ -70,6 +70,39 @@ body {
     }
     &-100 {
       width: calc(100%);
+    }
+  }
+
+  .h {
+    &-20 {
+      height: calc(20%);
+    }
+    &-25 {
+      height: calc(25%);
+    }
+    &-33 {
+      height: calc(100% / 3);
+    }
+    &-40 {
+      height: calc(40%);
+    }
+    &-50 {
+      height: calc(50%);
+    }
+    &-60 {
+      height: calc(60%);
+    }
+    &-66 {
+      height: calc(100% / 3 * 2);
+    }
+    &-75 {
+      height: calc(75%);
+    }
+    &-80 {
+      height: calc(80%);
+    }
+    &-100 {
+      height: calc(100%);
     }
   }
 

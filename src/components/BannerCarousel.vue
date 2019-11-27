@@ -5,10 +5,7 @@
       <swiper-slide v-for="(data, index) in datas" v-bind:key="'banner-'+index">
         <div v-bind:style="`background-image:url('${data.image}')`" class="img swiper-lazy"></div>
         <div class="content">
-          <div class="title">
-            {{data.title}}
-            <!-- <div class="sub-title">這是圖片的鏈接 {{image}}</div> -->
-          </div>
+          <div class="title">{{data.title}}</div>
         </div>
         <!-- <img data-src="{{image}}" class="swiper-lazy" /> -->
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
@@ -27,10 +24,13 @@ import 'swiper/dist/css/swiper.css';
 
 import { swiper, swiperSlide } from 'vue-awesome-swiper';
 
-import ReinforcingSteelImage from '../assets/鋼筋.jpg';
-import StoneImage from '../assets/大理石.jpg';
-import WoodImage from '../assets/木頭.jpg';
-import ArchitecturalConcreteImage from '../assets/清水模.jpg';
+import Banner1 from '../assets/banner/banner1.jpg';
+import Banner2 from '../assets/banner/banner2.jpg';
+import Banner3 from '../assets/banner/banner3.jpg';
+import Banner4 from '../assets/banner/banner4.jpg';
+import Banner5 from '../assets/banner/banner5.jpg';
+import Banner6 from '../assets/banner/banner6.jpg';
+import Banner7 from '../assets/banner/banner7.jpg';
 
 export default {
   components: {
@@ -39,43 +39,39 @@ export default {
   },
   data() {
     return {
-      datas: [{
-        image: 'https://picsum.photos/id/498/1920/1080',
-        title: '鼎秝建設',
-      },
-      {
-        image: ArchitecturalConcreteImage,
-        title: '清水模',
-      },
-      {
-        image: StoneImage,
-        title: '石材',
-      },
-      {
-        image: WoodImage,
-        title: '木地板',
-      },
-      {
-        image: 'https://cdn.ready-market.com/106/3a861c74//Templates/pic/Strongco-faq-12.jpg?v=83d77b3c',
-        title: '不鏽鋼龍頭',
-      },
-      {
-        image: ReinforcingSteelImage,
-        title: '鋼筋',
-      },
-      {
-        image: 'https://picsum.photos/id/783/1920/1080',
-        title: '.',
-      },
-      {
-        image: 'https://picsum.photos/id/785/1920/1080',
-        title: '.',
-      },
-      {
-        image: 'https://www.tesla.com/tesla_theme/assets/img/savings-calculator/modelx_white_wall_2x.jpg',
-        title: '科技(電動車)',
-
-      },
+      datas: [
+        {
+          image: Banner5,
+          title: '鼎秝建設',
+        },
+        {
+          image: Banner1,
+          title: '鐵定心，把最好呈現給您。',
+        },
+        {
+          image: Banner2,
+          title: '建築，是一種生活藝術的總集。',
+        },
+        {
+          image: Banner3,
+          title: '將心予你。匠心求己。講安心，對每一個家。',
+        },
+        {
+          image: Banner4,
+          title: '安全，是家的根本，不是配備。',
+        },
+        {
+          image: Banner5,
+          title: '堅持的工法，是一種態度;設計，則豐富了建築。',
+        },
+        {
+          image: Banner6,
+          title: '執子之手，傳世承孝，百善之家。',
+        },
+        {
+          image: Banner7,
+          title: '親情，暖了手，也暖了家。',
+        },
       ],
       swiperOption: {
         effect: 'fade',
@@ -87,10 +83,6 @@ export default {
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
         },
         navigation: {
           nextEl: '.swiper-button-next',
@@ -111,7 +103,7 @@ $banner_aspect-radio: 35%;
   width: 100%;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 767px) {
   .banner {
     padding-top: calc(#{$banner_aspect-radio} * 2);
   }
@@ -123,9 +115,9 @@ $banner_aspect-radio: 35%;
   height: 100%;
   // height: calc(100vw * 0.85);
 }
-.swiper-pagination {
-  bottom: 1rem;
-}
+// .swiper-pagination {
+//   bottom: 1rem;
+// }
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -140,46 +132,42 @@ $banner_aspect-radio: 35%;
   }
 
   .content {
-    background-color: rgba($color: #000000, $alpha: 0.2);
-    height: 100%;
+    background-color: rgba($color: #ffffff, $alpha: 0.6);
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
     left: 0;
-    margin: 0 auto;
+    padding: 0.5rem 1.2rem;
     .title {
-      color: white;
-      font-weight: bold;
-      font-size: calc(100vw * 0.05);
+      // font-weight: bold;
+      font-size: 2rem;
+      // font-size: calc(100vw * 0.045);
       position: relative;
       top: 30%;
-
-      .sub-title {
-        font-size: calc(100vw * 0.025);
-        font-weight: normal;
-      }
+      text-align: left;
     }
   }
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 767px) {
     .img {
-      height: 50%;
+      height: 75%;
     }
     .content {
-      background-color: black;
-      height: 50%;
+      background-color: grey;
+      height: 25%;
       position: relative;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      padding: initial;
       .title {
+        text-align: center;
         color: white;
-        font-weight: bold;
-        font-size: calc(100vw * 0.08);
-        // font-size: 1.5rem;
+        // font-weight: bold;
+        font-size: calc(100vw * 0.045);
         position: relative;
-        top: 30%;
-
-        .sub-title {
-          display: none;
-        }
+        // top: 38%;
       }
     }
   }
@@ -195,10 +183,10 @@ $banner_aspect-radio: 35%;
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 767px) {
   .swiper-button-next,
   .swiper-button-prev {
-    top: 25%;
+    top: 37.5%;
   }
 }
 </style>
