@@ -4,7 +4,10 @@
     <div class="title">永不停止，思索 Volvo Cars 的下一步</div>
     <carousel :responsive="responsive">
       <div class="content">
-        <div class="image bg-img" v-bind:style="`background-image:url('${DecorationImage}')`"></div>
+        <div
+          class="image bg-img"
+          v-bind:style="`background-image:url('${DecorationImage}')`"
+        ></div>
         <div class="title">裝修部</div>
         <!-- <div class="sub-title">-</div> -->
         <!-- <div class="more">了解更多 ></div> -->
@@ -12,7 +15,9 @@
       <div class="content">
         <div
           class="image"
-          v-bind:style="`background-image:url('http://assets.volvocars.com/tw/~/media/taiwan/images/wuntw/homepage_201904/02_linkinggrid/02_4096x2304.jpg')`"
+          v-bind:style="
+            `background-image:url('http://assets.volvocars.com/tw/~/media/taiwan/images/wuntw/homepage_201904/02_linkinggrid/02_4096x2304.jpg')`
+          "
         ></div>
         <div class="title">社會責任與服務</div>
         <!-- <div class="sub-title">在 2020 年之前，達到沒有人員因為乘坐 VOLVO 汽車而喪生或嚴重受傷。</div> -->
@@ -23,13 +28,13 @@
 
 <script>
 // require styles
-import carousel from 'vue-owl-carousel';
+import carousel from "vue-owl-carousel";
 
-import DecorationImage from '../assets/裝修部.jpg';
+import DecorationImage from "../assets/裝修部.jpg";
 
 export default {
   components: {
-    carousel,
+    carousel
   },
   data() {
     return {
@@ -40,18 +45,17 @@ export default {
           items: 2,
           nav: false,
           dots: false,
-          margin: 24,
+          margin: 24
           // freeDrag: true,
           // dragEndSpeed: false,
           // pullDrag: false,
           // autoWidth: true,
-        },
-      },
+        }
+      }
     };
-  },
+  }
 };
 </script>
-
 
 <style lang="scss">
 .event-section {

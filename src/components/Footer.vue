@@ -1,7 +1,7 @@
 <template>
   <div class="footer py-5">
     <b-container>
-      <b-row no-gutters=true align-h="center">
+      <b-row :no-gutters="true" align-h="center">
         <b-col cols="auto" class="px-3">
           <b>
             <a href="mailto:nameho99@gmail.com">與我們聯絡</a>
@@ -17,12 +17,12 @@
           <b>防震工程</b>
         </b-col>
       </b-row>
-      <b-row no-gutters=true class="pt-4">
+      <b-row :no-gutters="true" class="pt-4">
         <b-col>
           <h2>Ding Li Construction Taiwan</h2>
         </b-col>
       </b-row>
-      <b-row no-gutters=true align-h="center">
+      <b-row :no-gutters="true" align-h="center">
         <b-col cols="auto">
           <table>
             <tr>
@@ -44,7 +44,7 @@
           </table>
         </b-col>
       </b-row>
-      <b-row no-gutters=true align-h="center" class="mx-0 mt-4">
+      <b-row :no-gutters="true" align-h="center" class="mx-0 mt-4">
         <b-col cols="auto">
           <a class="announce">本網站所提供之圖片、數據皆來自網路</a>
         </b-col>

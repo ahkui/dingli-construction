@@ -2,10 +2,16 @@
   <section class="banner">
     <!-- swiper -->
     <swiper :options="swiperOption">
-      <swiper-slide v-for="(data, index) in datas" v-bind:key="'banner-'+index">
-        <div v-bind:style="`background-image:url('${data.image}')`" class="img swiper-lazy"></div>
+      <swiper-slide
+        v-for="(data, index) in datas"
+        v-bind:key="'banner-' + index"
+      >
+        <div
+          v-bind:style="`background-image:url('${data.image}')`"
+          class="img swiper-lazy"
+        ></div>
         <div class="content">
-          <div class="title">{{data.title}}</div>
+          <div class="title">{{ data.title }}</div>
         </div>
         <!-- <img data-src="{{image}}" class="swiper-lazy" /> -->
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
@@ -20,61 +26,61 @@
 <script>
 // require styles
 // eslint-disable-next-line import/no-extraneous-dependencies
-import 'swiper/dist/css/swiper.css';
+import "swiper/dist/css/swiper.css";
 
-import { swiper, swiperSlide } from 'vue-awesome-swiper';
+import { swiper, swiperSlide } from "vue-awesome-swiper";
 
-import Banner1 from '../assets/banner/banner1.jpg';
-import Banner2 from '../assets/banner/banner2.jpg';
-import Banner3 from '../assets/banner/banner3.jpg';
-import Banner4 from '../assets/banner/banner4.jpg';
-import Banner5 from '../assets/banner/banner5.jpg';
-import Banner6 from '../assets/banner/banner6.jpg';
-import Banner7 from '../assets/banner/banner7.jpg';
+import Banner1 from "../assets/banner/banner1.jpg";
+import Banner2 from "../assets/banner/banner2.jpg";
+import Banner3 from "../assets/banner/banner3.jpg";
+import Banner4 from "../assets/banner/banner4.jpg";
+import Banner5 from "../assets/banner/banner5.jpg";
+import Banner6 from "../assets/banner/banner6.jpg";
+import Banner7 from "../assets/banner/banner7.jpg";
 
 export default {
   components: {
     swiper,
-    swiperSlide,
+    swiperSlide
   },
   data() {
     return {
       datas: [
         {
           image: Banner5,
-          title: '鼎秝建設',
+          title: "鼎秝建設"
         },
         {
           image: Banner1,
-          title: '鐵定心，把最好呈現給您。',
+          title: "鐵定心，把最好呈現給您。"
         },
         {
           image: Banner2,
-          title: '建築，是一種生活藝術的總集。',
+          title: "建築，是一種生活藝術的總集。"
         },
         {
           image: Banner3,
-          title: '將心予你。匠心求己。講安心，對每一個家。',
+          title: "將心予你。匠心求己。講安心，對每一個家。"
         },
         {
           image: Banner4,
-          title: '安全，是家的根本，不是配備。',
+          title: "安全，是家的根本，不是配備。"
         },
         {
           image: Banner5,
-          title: '堅持的工法，是一種態度;設計，則豐富了建築。',
+          title: "堅持的工法，是一種態度;設計，則豐富了建築。"
         },
         {
           image: Banner6,
-          title: '執子之手，傳世承孝，百善之家。',
+          title: "執子之手，傳世承孝，百善之家。"
         },
         {
           image: Banner7,
-          title: '親情，暖了手，也暖了家。',
-        },
+          title: "親情，暖了手，也暖了家。"
+        }
       ],
       swiperOption: {
-        effect: 'fade',
+        effect: "fade",
         grabCursor: true,
         lazy: true,
         loop: true,
@@ -82,18 +88,17 @@ export default {
         centeredSlides: true,
         autoplay: {
           delay: 3000,
-          disableOnInteraction: false,
+          disableOnInteraction: false
         },
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      },
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      }
     };
-  },
+  }
 };
 </script>
-
 
 <style lang="scss" scoped>
 $banner_aspect-radio: 35%;

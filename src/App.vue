@@ -1,142 +1,128 @@
 <template>
   <div id="app">
-    <StickyNavBar />
-    <BannerCarousel />
-    <Features />
-    <EventCarousel />
-    <Footer />
+    <b-navbar toggleable="md" variant="faded" type="light">
+      <b-navbar-brand to="/">鼎秝建設</b-navbar-brand>
+
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav class="ml-auto">
+          <b-nav-item to="about">鼎秝·序</b-nav-item>
+          <b-nav-item to="about">客戶服務</b-nav-item>
+          <b-nav-item
+            href="https://www.facebook.com/鼎秝建設-1994258083943925"
+            target="_blank"
+          >
+            <font-awesome-icon :icon="['fab', 'facebook']" size="lg" />
+          </b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
+    <router-view />
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-import Footer from './components/Footer.vue';
-import Features from './components/Features.vue';
-import BannerCarousel from './components/BannerCarousel.vue';
-import EventCarousel from './components/EventCarousel.vue';
-import StickyNavBar from './components/StickyNavBar.vue';
+import Footer from "@/components/Footer.vue";
 
 export default {
-  name: 'app',
   components: {
-    Footer,
-    Features,
-    BannerCarousel,
-    EventCarousel,
-    StickyNavBar,
-  },
+    Footer
+  }
 };
 </script>
 
 <style lang="scss">
-html,
-body {
-  margin: 0;
-}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  // margin-top: 60px;
+}
 
-  .w {
-    &-20 {
-      width: calc(20%);
-    }
-    &-25 {
-      width: calc(25%);
-    }
-    &-33 {
-      width: calc(100% / 3);
-    }
-    &-40 {
-      width: calc(40%);
-    }
-    &-50 {
-      width: calc(50%);
-    }
-    &-60 {
-      width: calc(60%);
-    }
-    &-66 {
-      width: calc(100% / 3 * 2);
-    }
-    &-75 {
-      width: calc(75%);
-    }
-    &-80 {
-      width: calc(80%);
-    }
-    &-100 {
-      width: calc(100%);
+#nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
     }
   }
-
-  .h {
-    &-20 {
-      height: calc(20%);
-    }
-    &-25 {
-      height: calc(25%);
-    }
-    &-33 {
-      height: calc(100% / 3);
-    }
-    &-40 {
-      height: calc(40%);
-    }
-    &-50 {
-      height: calc(50%);
-    }
-    &-60 {
-      height: calc(60%);
-    }
-    &-66 {
-      height: calc(100% / 3 * 2);
-    }
-    &-75 {
-      height: calc(75%);
-    }
-    &-80 {
-      height: calc(80%);
-    }
-    &-100 {
-      height: calc(100%);
-    }
+}
+.w {
+  &-20 {
+    width: calc(20%);
   }
-
-  .bg-img {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  &-25 {
+    width: calc(25%);
   }
-
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+  &-33 {
+    width: calc(100% / 3);
   }
-
-  .col {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
+  &-40 {
+    width: calc(40%);
   }
-
-  .col,
-  .row {
-    &-2 {
-      flex: 2;
-    }
-    &-3 {
-      flex: 3;
-    }
-    &-4 {
-      flex: 4;
-    }
+  &-50 {
+    width: calc(50%);
   }
+  &-60 {
+    width: calc(60%);
+  }
+  &-66 {
+    width: calc(100% / 3 * 2);
+  }
+  &-75 {
+    width: calc(75%);
+  }
+  &-80 {
+    width: calc(80%);
+  }
+  &-100 {
+    width: calc(100%);
+  }
+}
+
+.h {
+  &-20 {
+    height: calc(20%);
+  }
+  &-25 {
+    height: calc(25%);
+  }
+  &-33 {
+    height: calc(100% / 3);
+  }
+  &-40 {
+    height: calc(40%);
+  }
+  &-50 {
+    height: calc(50%);
+  }
+  &-60 {
+    height: calc(60%);
+  }
+  &-66 {
+    height: calc(100% / 3 * 2);
+  }
+  &-75 {
+    height: calc(75%);
+  }
+  &-80 {
+    height: calc(80%);
+  }
+  &-100 {
+    height: calc(100%);
+  }
+}
+
+.bg-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
