@@ -26,7 +26,10 @@
       <b-col cols="12" md="3" class="px-md-1">
         <b-row :no-gutters="true" class="h-33">
           <b-col cols="12" class="py-1 pt-md-0">
-            <div class="bg-img feature" v-bind:style="`background-image:url('${StructureImage}')`">
+            <div
+              class="bg-img feature"
+              v-bind:style="`background-image:url('${StructureImage}')`"
+            >
               <h2 class="title">結構</h2>
               <div class="overlay">
                 <div class="overlay-content">
@@ -37,7 +40,7 @@
                       <p>- 結構 -</p>
                   </div>-->
                   <div class="overlay-more">
-                    <b-link to="about">了解更多</b-link>
+                    <b-link :to="{ name: 'shockproof' }">了解更多</b-link>
                   </div>
                 </div>
               </div>
@@ -97,7 +100,10 @@
         </b-row>
         <b-row :no-gutters="true" class="h-33">
           <b-col cols="12" class="py-1 pb-md-0">
-            <div class="bg-img feature" v-bind:style="`background-image:url('${NewCaseImage}')`">
+            <div
+              class="bg-img feature"
+              v-bind:style="`background-image:url('${NewCaseImage}')`"
+            >
               <h2 class="title">防水</h2>
               <div class="overlay">
                 <div class="overlay-content">

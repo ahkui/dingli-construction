@@ -1,6 +1,12 @@
 <template>
   <div id="app">
-    <b-navbar toggleable="md" variant="faded" type="light">
+    <b-navbar
+      toggleable="md"
+      variant="light"
+      type="light"
+      sticky="true"
+      class="shadow-sm"
+    >
       <b-navbar-brand to="/">鼎秝建設</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
