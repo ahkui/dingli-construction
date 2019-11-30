@@ -16,7 +16,7 @@
                   <p>- 新建案資訊 -</p>
               </div>-->
               <div class="overlay-more">
-                <b-link to="about">了解更多</b-link>
+                <b-link :to="{ name: 'about' }">了解更多</b-link>
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@
                       <p>- 陶瓷工藝 -</p>
                   </div>-->
                   <div class="overlay-more">
-                    <b-link to="about">了解更多</b-link>
+                    <b-link :to="{ name: 'about' }">了解更多</b-link>
                   </div>
                 </div>
               </div>
@@ -91,7 +91,7 @@
                       <p>- 廚衛工藝 -</p>
                   </div>-->
                   <div class="overlay-more">
-                    <b-link to="about">了解更多</b-link>
+                    <b-link :to="{ name: 'about' }">了解更多</b-link>
                   </div>
                 </div>
               </div>
@@ -114,7 +114,7 @@
                       <p>- 防水 -</p>
                   </div>-->
                   <div class="overlay-more">
-                    <b-link to="about">了解更多</b-link>
+                    <b-link :to="{ name: 'about' }">了解更多</b-link>
                   </div>
                 </div>
               </div>

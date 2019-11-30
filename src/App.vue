@@ -13,8 +13,8 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item to="about">鼎秝·序</b-nav-item>
-          <b-nav-item to="about">客戶服務</b-nav-item>
+          <b-nav-item :to="{ name: 'about' }">鼎秝·序</b-nav-item>
+          <b-nav-item :to="{ name: 'about' }">客戶服務</b-nav-item>
           <b-nav-item
             href="https://www.facebook.com/鼎秝建設-1994258083943925"
             target="_blank"
