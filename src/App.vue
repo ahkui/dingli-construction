@@ -4,7 +4,7 @@
       toggleable="md"
       variant="light"
       type="light"
-      sticky="true"
+      :sticky="true"
       class="shadow-sm"
     >
       <b-navbar-brand to="/">鼎秝建設</b-navbar-brand>
