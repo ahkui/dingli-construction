@@ -6,17 +6,17 @@
           class="bg-img feature feature-first"
           v-bind:style="`background-image:url('${NewCaseImage}')`"
         >
-          <h2 class="title">新建案資訊</h2>
+          <a class="title h3">新建案資訊</a>
           <div class="overlay">
             <div class="overlay-content">
               <div class="overlay-title">
-                <h2>新建案資訊</h2>
+                <a class="h3">新建案資訊</a>
               </div>
               <!-- <div class="overlay-infomation">
                   <p>- 新建案資訊 -</p>
               </div>-->
               <div class="overlay-more">
-                <b-link :to="{ name: 'about' }">了解更多</b-link>
+                <b-link :to="{ name: 'home' }">了解更多</b-link>
               </div>
             </div>
           </div>
@@ -30,11 +30,11 @@
               class="bg-img feature"
               v-bind:style="`background-image:url('${StructureImage}')`"
             >
-              <h2 class="title">結構</h2>
+              <a class="title h3">結構</a>
               <div class="overlay">
                 <div class="overlay-content">
                   <div class="overlay-title">
-                    <h2>結構</h2>
+                    <a class="h3">結構</a>
                   </div>
                   <!-- <div class="overlay-infomation">
                       <p>- 結構 -</p>
@@ -53,17 +53,17 @@
               class="bg-img feature"
               v-bind:style="`background-image:url('${CeramicTechImage}')`"
             >
-              <h2 class="title">陶瓷工藝</h2>
+              <a class="h3 title">陶瓷工藝</a>
               <div class="overlay">
                 <div class="overlay-content">
                   <div class="overlay-title">
-                    <h2>陶瓷工藝</h2>
+                    <a class="h3">陶瓷工藝</a>
                   </div>
                   <!-- <div class="overlay-infomation">
                       <p>- 陶瓷工藝 -</p>
                   </div>-->
                   <div class="overlay-more">
-                    <b-link :to="{ name: 'about' }">了解更多</b-link>
+                    <b-link :to="{ name: 'ceramics' }">了解更多</b-link>
                   </div>
                 </div>
               </div>
@@ -81,17 +81,17 @@
                 `background-image:url('${KitchenBathroomTechImage}')`
               "
             >
-              <h2 class="title">廚衛工藝</h2>
+              <a class="h3 title">廚衛工藝</a>
               <div class="overlay">
                 <div class="overlay-content">
                   <div class="overlay-title">
-                    <h2>廚衛工藝</h2>
+                    <a class="h3">廚衛工藝</a>
                   </div>
                   <!-- <div class="overlay-infomation">
                       <p>- 廚衛工藝 -</p>
                   </div>-->
                   <div class="overlay-more">
-                    <b-link :to="{ name: 'about' }">了解更多</b-link>
+                    <b-link :to="{ name: 'kitchen' }">了解更多</b-link>
                   </div>
                 </div>
               </div>
@@ -102,19 +102,19 @@
           <b-col cols="12" class="py-1 pb-md-0">
             <div
               class="bg-img feature"
-              v-bind:style="`background-image:url('${NewCaseImage}')`"
+              v-bind:style="`background-image:url('${SmartSpaceImage}')`"
             >
-              <h2 class="title">防水</h2>
+              <a class="title h3">智能空間</a>
               <div class="overlay">
                 <div class="overlay-content">
                   <div class="overlay-title">
-                    <h2>防水</h2>
+                    <a class="h3">智能空間</a>
                   </div>
                   <!-- <div class="overlay-infomation">
-                      <p>- 防水 -</p>
+                      <p>- 智能空間 -</p>
                   </div>-->
                   <div class="overlay-more">
-                    <b-link :to="{ name: 'about' }">了解更多</b-link>
+                    <b-link :to="{ name: 'smartspace' }">了解更多</b-link>
                   </div>
                 </div>
               </div>
@@ -128,9 +128,10 @@
 
 <script>
 import NewCaseImage from "../assets/6x3m_帆布.jpg";
-import StructureImage from "../assets/結構.jpg";
-import CeramicTechImage from "../assets/陶瓷工藝.jpg";
-import KitchenBathroomTechImage from "../assets/廚衛工藝.jpg";
+import SmartSpaceImage from "@/assets/智能空間.jpg";
+import StructureImage from "@/assets/結構.jpg";
+import CeramicTechImage from "@/assets/陶瓷工藝.jpg";
+import KitchenBathroomTechImage from "@/assets/廚衛工藝.jpg";
 
 export default {
   components: {
@@ -139,6 +140,7 @@ export default {
   data() {
     return {
       NewCaseImage,
+      SmartSpaceImage,
       StructureImage,
       CeramicTechImage,
       KitchenBathroomTechImage
@@ -228,11 +230,14 @@ section {
   }
 
   .title {
-    bottom: $feature-content-spacing;
-    left: $feature-content-spacing;
-    right: $feature-content-spacing;
+    padding: $feature-content-spacing;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
     margin: 0;
     text-align: left;
+    // background-color: rgba(0, 0, 0, 0.2);
   }
 
   &:hover {

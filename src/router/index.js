@@ -2,6 +2,9 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "@/views/Home.vue";
 import Shockproof from "@/views/features/Shockproof.vue";
+import SmartSpace from "@/views/features/SmartSpace.vue";
+import Kitchen from "@/views/features/Kitchen.vue";
+import Ceramics from "@/views/features/Ceramics.vue";
 
 Vue.use(VueRouter);
 
@@ -24,6 +27,21 @@ const routes = [
     path: "/feature/shockproof",
     name: "shockproof",
     component: Shockproof
+  },
+  {
+    path: "/feature/smartspace",
+    name: "smartspace",
+    component: SmartSpace
+  },
+  {
+    path: "/feature/kitchen",
+    name: "kitchen",
+    component: Kitchen
+  },
+  {
+    path: "/feature/ceramics",
+    name: "ceramics",
+    component: Ceramics
   }
 ];
 
