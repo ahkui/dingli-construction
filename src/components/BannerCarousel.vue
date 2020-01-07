@@ -145,11 +145,14 @@ $banner_aspect-radio: 35%;
     padding: 0.5rem 1.2rem;
     .title {
       // font-weight: bold;
-      font-size: 2rem;
-      // font-size: calc(100vw * 0.045);
+      // font-size: 2rem;
+      font-size: calc(100vw * 0.025);
       position: relative;
       top: 30%;
       text-align: left;
+      @media screen and (max-width: 2000px) {
+        font-size: 2rem;
+      }
     }
   }
 

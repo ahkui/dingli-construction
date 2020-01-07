@@ -131,4 +131,12 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (min-width: 2000px) {
+  .navbar-brand {
+    font-size: calc(100vw * 0.018) !important;
+  }
+  body {
+    font-size: calc(100vw * 0.015) !important;
+  }
+}
 </style>

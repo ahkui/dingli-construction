@@ -1,26 +1,34 @@
 <template>
   <div class="smartspace">
-    <b-container>
-      <b-row
-        align-v="center"
-        v-for="(data, index) in datas"
-        v-bind:key="`feature-${index}`"
-        no-gutters="true"
-      >
-        <b-col md="6" cols="12" v-if="index % 2 === 0">
-          <img width="100%" :src="data.image" alt="" />
-        </b-col>
-        <b-col md="6" cols="12" v-else order-md="2">
-          <img width="100%" :src="data.image" alt="" />
-        </b-col>
+    <b-container fluid
+      ><div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+          <b-row
+            align-v="center"
+            v-for="(data, index) in datas"
+            v-bind:key="`feature-${index}`"
+            no-gutters="true"
+          >
+            <b-col md="6" cols="12" v-if="index % 2 === 0">
+              <img width="100%" :src="data.image" alt="" />
+            </b-col>
+            <b-col md="6" cols="12" v-else order-md="2">
+              <img width="100%" :src="data.image" alt="" />
+            </b-col>
 
-        <b-col class="px-3" md="6" cols="12" v-if="index % 2 === 0">
-          <h5 :key="tIndex" v-for="(text, tIndex) in data.texts">{{ text }}</h5>
-        </b-col>
-        <b-col class="px-3" md="6" cols="12" v-else order-md="1">
-          <h5 :key="tIndex" v-for="(text, tIndex) in data.texts">{{ text }}</h5>
-        </b-col>
-      </b-row>
+            <b-col class="px-3" md="6" cols="12" v-if="index % 2 === 0">
+              <h5 :key="tIndex" v-for="(text, tIndex) in data.texts">
+                {{ text }}
+              </h5>
+            </b-col>
+            <b-col class="px-3" md="6" cols="12" v-else order-md="1">
+              <h5 :key="tIndex" v-for="(text, tIndex) in data.texts">
+                {{ text }}
+              </h5>
+            </b-col>
+          </b-row>
+        </div>
+      </div>
     </b-container>
   </div>
 </template>
