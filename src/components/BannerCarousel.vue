@@ -30,13 +30,13 @@ import "swiper/dist/css/swiper.css";
 
 import { swiper, swiperSlide } from "vue-awesome-swiper";
 
-import Banner1 from "../assets/banner/banner1.jpg";
-import Banner2 from "../assets/banner/banner2.jpg";
-import Banner3 from "../assets/banner/banner3.jpg";
-import Banner4 from "../assets/banner/banner4.jpg";
-import Banner5 from "../assets/banner/banner5.jpg";
-import Banner6 from "../assets/banner/banner6.jpg";
-import Banner7 from "../assets/banner/banner7.jpg";
+import Banner1 from "@/assets/banner/banner1.jpg";
+import Banner2 from "@/assets/banner/banner2.jpg";
+import Banner3 from "@/assets/banner/banner3.jpg";
+import Banner4 from "@/assets/banner/banner4.jpg";
+import Banner5 from "@/assets/banner/banner5.jpg";
+import Banner6 from "@/assets/banner/banner6.jpg";
+import Banner7 from "@/assets/banner/banner7.jpg";
 
 export default {
   components: {

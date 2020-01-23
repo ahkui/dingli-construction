@@ -16,7 +16,7 @@
         <div
           class="image"
           v-bind:style="
-            `background-image:url('http://assets.volvocars.com/tw/~/media/taiwan/images/wuntw/homepage_201904/02_linkinggrid/02_4096x2304.jpg')`
+            `background-image:url('${SocialResponsibilityAndServicesImage}')`
           "
         ></div>
         <div class="title">社會責任與服務</div>
@@ -29,8 +29,8 @@
 <script>
 // require styles
 import carousel from "vue-owl-carousel";
-
-import DecorationImage from "../assets/裝修部.jpg";
+import SocialResponsibilityAndServicesImage from "@/assets/社會責任與服務.jpg";
+import DecorationImage from "@/assets/裝修部.jpg";
 
 export default {
   components: {
@@ -39,6 +39,7 @@ export default {
   data() {
     return {
       DecorationImage,
+      SocialResponsibilityAndServicesImage,
       responsive: {
         0: { items: 1, nav: false },
         720: {

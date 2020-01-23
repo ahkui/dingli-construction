@@ -3,8 +3,28 @@
     <b-row :no-gutters="true">
       <b-col cols="12" md="6" class="pb-1 pb-md-0 pr-md-1">
         <div
-          class="bg-img feature feature-first"
+          class="bg-img feature feature-first d-block d-md-none"
           v-bind:style="`background-image:url('${NewCaseImage}')`"
+        >
+          <a class="title h3">新建案資訊</a>
+          <div class="overlay">
+            <div class="overlay-content">
+              <div class="overlay-title">
+                <a class="h3">新建案資訊</a>
+              </div>
+              <!-- <div class="overlay-infomation">
+                  <p>- 新建案資訊 -</p>
+              </div>-->
+              <div class="overlay-more">
+                <b-link :to="{ name: 'home' }">了解更多</b-link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-img feature feature-first d-none d-md-block"
+          v-bind:style="`background-image:url('${NewCaseImage2}')`"
         >
           <a class="title h3">新建案資訊</a>
           <div class="overlay">
@@ -127,7 +147,8 @@
 </template>
 
 <script>
-import NewCaseImage from "../assets/6x3m_帆布.jpg";
+import NewCaseImage from "@/assets/6x3m_帆布.jpg";
+import NewCaseImage2 from "@/assets/4x3.3_帆布.jpg";
 import SmartSpaceImage from "@/assets/智能空間.jpg";
 import StructureImage from "@/assets/結構.jpg";
 import CeramicTechImage from "@/assets/陶瓷工藝.jpg";
@@ -140,6 +161,7 @@ export default {
   data() {
     return {
       NewCaseImage,
+      NewCaseImage2,
       SmartSpaceImage,
       StructureImage,
       CeramicTechImage,
@@ -173,10 +195,10 @@ section {
   height: 100%;
 
   &-first {
-    height: calc(100vw * 0.4) !important;
+    height: calc(100vw * 0.5) !important;
   }
   @media screen and (max-width: 767px) {
-    height: calc(100vw * 0.4) !important;
+    height: calc(100vw * 0.5) !important;
   }
 
   .overlay,

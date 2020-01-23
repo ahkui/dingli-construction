@@ -1,13 +1,9 @@
 <template>
   <div id="app">
-    <b-navbar
-      toggleable="md"
-      variant="light"
-      type="light"
-      :sticky="true"
-      class="shadow-sm"
-    >
-      <b-navbar-brand to="/">鼎秝建設</b-navbar-brand>
+    <b-navbar toggleable="md" variant="light" type="light" :sticky="true" class="shadow-sm">
+      <b-navbar-brand to="/">
+        <img :src="LogoImage" alt="Logo" class="logo" />
+      </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -15,10 +11,7 @@
         <b-navbar-nav class="ml-auto">
           <b-nav-item :to="{ name: 'about' }">鼎秝·序</b-nav-item>
           <b-nav-item :to="{ name: 'about' }">客戶服務</b-nav-item>
-          <b-nav-item
-            href="https://www.facebook.com/鼎秝建設-1994258083943925"
-            target="_blank"
-          >
+          <b-nav-item :href="fbLink" target="_blank">
             <font-awesome-icon :icon="['fab', 'facebook']" size="lg" />
           </b-nav-item>
         </b-navbar-nav>
@@ -31,35 +24,32 @@
 
 <script>
 import Footer from "@/components/Footer.vue";
+import LogoImage from "@/assets/logo.png";
 
 export default {
   components: {
     Footer
+  },
+  data() {
+    return {
+      LogoImage,
+      fbLink: "https://www.facebook.com/鼎秝建設-1994258083943925"
+    };
   }
 };
 </script>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, "Noto Sans TC", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 .w {
   &-20 {
     width: calc(20%);
@@ -137,6 +127,14 @@ export default {
   }
   body {
     font-size: calc(100vw * 0.015) !important;
+  }
+}
+.navbar-brand {
+  .logo {
+    height: 40px;
+    @media screen and (min-width: 2000px) {
+      height: calc(100vw * 0.04) !important;
+    }
   }
 }
 </style>
