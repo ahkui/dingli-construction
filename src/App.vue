@@ -1,6 +1,12 @@
 <template>
   <div id="app">
-    <b-navbar toggleable="md" variant="light" type="light" :sticky="true" class="shadow-sm">
+    <b-navbar
+      toggleable="md"
+      variant="light"
+      type="light"
+      :sticky="true"
+      class="shadow-sm"
+    >
       <b-navbar-brand to="/">
         <img :src="LogoImage" alt="Logo" class="logo" />
       </b-navbar-brand>
@@ -41,9 +47,10 @@ export default {
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
 
 #app {
-  font-family: "Avenir", Helvetica, Arial, "Noto Sans TC", sans-serif;
+  font-family: "Avenir", "Noto Sans TC", "Noto Sans SC", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
