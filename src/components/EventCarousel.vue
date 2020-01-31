@@ -14,7 +14,7 @@
       </div>
       <div class="content">
         <div
-          class="image"
+          class="image bg-img"
           v-bind:style="
             `background-image:url('${SocialResponsibilityAndServicesImage}')`
           "
